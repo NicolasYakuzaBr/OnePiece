@@ -22,6 +22,7 @@ header {
     padding: 15px 3%;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 nav ul {
@@ -35,6 +36,13 @@ nav li {
 nav a {
     color: #ffffff;
     font-weight: bold;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    color: yellow;
+    transition: 0.4s;
     text-decoration: none;
     
 }
@@ -129,13 +137,14 @@ nav a {
 }
 
 .content {
+    width: 100%;
+    height: 100vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 
-    width: 100%;
-    height: 100vh;
 }
 
 .card {
@@ -148,14 +157,12 @@ nav a {
     align-content: center;
     text-align: center;
 }
-
 .mediaCard1 {
     background: url('imagens/Anime.jpg');
     background-position: center;
     background-size: cover;
     height: 250px;
     width: 100%;
-
 }
 .mediaCard2 {
     background: url('imagens/Filmes.png');
@@ -163,7 +170,6 @@ nav a {
     background-size: cover;
     height: 250px;
     width: 100%;
-
 }
 .mediaCard3 {
     background: url('imagens/Mangá.jpg');
@@ -171,7 +177,6 @@ nav a {
     background-size: cover;
     height: 250px;
     width: 100%;
-
 }
 .mediaCard4 {
     background: url('imagens/Netflix.jpg');
@@ -179,7 +184,6 @@ nav a {
     background-size: cover;
     height: 250px;
     width: 100%;
-
 }
 
 .topCard {
@@ -200,10 +204,6 @@ nav a {
 .title {
     color: black;
 }
-
-
-
-
 
 .container {
     width: 100%;
@@ -242,8 +242,7 @@ h2 {
     background: #333;
 }
 
-
-@media (max-width: 728px) {
+@media (max-width: 768px) {
     header, nav {
         display: none;
     }
@@ -267,18 +266,17 @@ h2 {
         text-align: center;
         height: 75vh;
         font-weight: bold;
-        
     }
 
     .carousel-item img {
         height: 50vh ;
         width: 100%;
-        
-
     }
+
     .carousel-indicators {
         display: none;
     }
+
     .history-text p {
         font-size: 18px;
         padding: 0;
@@ -293,21 +291,11 @@ h2 {
         font-weight: bold;
         text-align: left;
 
-        letter-spacing: 0.7px;
-        line-height: 1.1;
-        
+        letter-spacing: 1px;
+        line-height: 1.2;
         
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-
-        
-        
-        
-        margin-bottom: 0.7em;
-        
-
+        margin-bottom: 1em;
         
     }
-   
-    
 }
-
